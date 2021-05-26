@@ -99,7 +99,15 @@ body{
     position: relative;
     font-family: 'Dancing Script', sans-serif;
 
-
+}
+.nav-links ul li:hover{
+    background-color: saddlebrown;
+}
+.nav-links ul ul {
+    display: none;
+}
+.nav-links ul li:hover > ul{
+    display: block;
 }
 svg
 {
