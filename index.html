@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/homepage.css"> <!--Link external stylesheet to html by using rel-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
  
     <title>WELCOME TO MY BLOG</title>
-
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body background="./Images/cofee.png" >
-    <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/Assests/php/"; include($IPATH."header.html"); ?>
+    <section id="header"></section>
     
     <h1>WELCOME</h1>
     <p style="text-align: center;"><a href="./TheoryBlogPosts/BlogPage.html"> START READING THEORY BLOGS</a>>
