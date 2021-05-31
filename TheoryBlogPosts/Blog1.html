@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/theorypage.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/homepage.css">
-     <!--Link external stylesheet to html by using rel-->
+    <link rel="stylesheet" href="../CSS/theorypage.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
    
     
@@ -15,25 +16,84 @@
 </head>
 
 <body >
-    <?php include('header.php'); ?>
-    <h3>The Poet's Blog </h3>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="../index.html">HOME</a> 
-    &nbsp;&nbsp;&nbsp;
-    <a href="../TheoryBlogPosts/BlogPage.html">THEORY BLOGS</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="../CharacterBlogs/CharacterBlogPage.html">CHARACTER BLOGS</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="../About/AboutPage.html">ABOUT</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="../ContactUs/ContactPage.html">CONTACT US</a>
-    <br /> <br /> <br /> <br /> 
+    <nav>
+        <header class="logo">
+               <h1>Poet's Blog </h1>
+            </header>
+            <ul class= "nav-links">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href= "../About/AboutPage.html">About</a>
+                    
+                </li>
+                <li>
+                    <a href="../TheoryBlogPosts/BlogPage.html">Theory Blogs </a>
+                       <ul>
+                           <li>
+                              <a href="../TheoryBlogPosts/Blog1.html"> Library of Babel</a> 
+                           </li>   
+                           <li>
+                               <a href="../TheoryBlogPosts/Blog2.html">Technology and the development and Spread of Internet Culture</a>
+                           </li>
+                           <li>
+                               <a href="../TheoryBlogPosts/Blog3.html">What is a browser?</a>
+                           </li>
+                           <li>
+                               <a href="../TheoryBlogPosts/Blog4.html">Medium is the message</a>
+                           </li>
+                           <li>
+                              <a href="../TheoryBlogPosts/Blog5.html">History of Web Robots</a> 
+                           </li>
+                           <li>
+                               <a href="../TheoryBlogPosts/Blog6.html">User Experience</a>
+                           </li>
+                           <li>
+                              <a href="../TheoryBlogPosts/Blog7.html">Usability</a> 
+                           </li>
+                           <li>
+                               <a href="../TheoryBlogPosts/Blog8.html">Digital Divide</a>
+                           </li>
+                           <li>
+                               <a href="../TheoryBlogPosts/BonusBlog.html">Bonus Blogs</a>
+                           </li>
+                       </ul>
+                </li>
+                    <li> 
+                        <a href="../CharacterBlogs/CharacterBlogPage.html">Character Blogs</a>
+                        <ul>
+                           <li>
+                              <a href="../CharacterBlogs/CharacterBlog1.html"> Is the internet ruining creatives?</a> 
+                           </li> 
+                           <li>
+                               <a href="../CharacterBlogs/ImagesPage.html">Poetry Diaries</a>
+                           </li>
+                           <li>
+                               <a href="../CharacterBlogs/cityblog.html">City Blog</a>
+                           </li>
+                        </ul>
+                    </li>
+                        <li>
+                            <a href="../ContactUs/ContactPage.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <svg class= "svg" viewBox="0 0 100 80" width="30" height="30">
+                        <rect width="100" height="15"></rect>
+                        <rect y="30" width="100" height="15"></rect>
+                        <rect y="60" width="100" height="15"></rect>
+                      </svg>
+                </nav>
+                <script src="../JavaScript/homepage.js"> </script>
+                <br>
+                <br>
     
-    
-    <p class="blogs">
+    <section class="layoutblogs">
+        <p class="blogs">
         <h1 >Library of Babel</h1>
         <time datetime="2021/03/16">Posted Tuesday, 16 March 2021</time>
         <p> Author: Oratile Tlhabanyane</p>
+        <br>
 
         <p>
         Library of Babel’s reading was a bit hard to comprehend, it felt like I was reading actual babel. 
@@ -79,7 +139,7 @@
         because of the infinite possibilities of the future in which it offers. In my second lifetime, I would 
         have been a librarian, searching through every hexagon, every shelf trying to find my truth. </p>
     </p> 
-    
+    <br>
         <p><strong>536 words</strong></p>
 
          <p style="text-align: center;"> <strong> Reference List</strong>
@@ -89,9 +149,48 @@
         <br>
         <br>
         <br>
-         <p style="text-align: center;">   <a class= "nav-links" class="bottom-navigation"  href="../TheoryBlogPosts/BlogPage.html">Theory homepage</a> </p>
+         <p style="text-align: center">   <a style="color: black;"  class="bottom-navigation"  href="../TheoryBlogPosts/BlogPage.html">Go back to Theory homepage</a> </p>
       
-       <p style="text-align: center;"><a class= "nav-links" href="../TheoryBlogPosts/Blog2.html">Go to next blog</a></p> 
+       <p style="text-align: center"><a style="color: black;"  href="../TheoryBlogPosts/Blog2.html">Go to next blog>>></a></p> 
         
+    </p>
+    </section>
+    <footer class="footer">
+        <section class="container">
+            <section class="row">
+                <section class="footer-col">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="../About/AboutPage.html">About Us</a></li>
+                        <li><a href="../CharacterBlogs/ImagesPage.html">Our Poetry Story</a></li>
+                    </ul>
+                </section> 
+                <section class="footer-col">
+                    <h1> Reach out for help</h1>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Buy poetry here</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                   
+                </section>
+                <section class="footer-col">
+                    <h1> Online Shop</h1>
+                    <ul >
+                        <li><a href="#">Poetry Book</a></li>
+                        <li><a href="#">Poet's Blog Diaries</a></li>
+                        <li><a href="#">Photograhs</a></li>
+                    </ul>
+                </section>
+                <section class="footer-col">
+                <h1>Follow Us</h1>
+                <section class="social_links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </section>
+        </section>
+    </footer>
 </body>
 </html>
