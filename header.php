@@ -4,22 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/homepage.css">
     <title>Document</title>
 
-
-
-
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
 </head>
 <body>
     <nav>
@@ -34,39 +22,36 @@ $(function(){
                  <a href= "./About/AboutPage.html">About</a>
              </li>
              <li>
-                 <a href="./TheoryBlogPosts/BlogPage.html">Theory Blogs
+                 <a href="./TheoryBlogPosts/BlogPage.html">Theory Blogs </a>
                     <ul>
                         <li>
-                            Library of Babel
+                           <a href="./TheoryBlogPosts/Blog1.html"> Library of Babel</a> 
+                        </li>   
+                        <li>
+                            <a href="./TheoryBlogPosts/Blog2.html">Technology and the development and Spread of Internet Culture</a>
                         </li>
                         <li>
-                           
+                            <a href="./TheoryBlogPosts/Blog3.html">What is a browser?</a>
                         </li>
                         <li>
-                            Technology and the development and Spread of Internet Culture
+                            <a href="./TheoryBlogPosts/Blog4.html">Medium is the message</a>
                         </li>
                         <li>
-                            What is a browser?
+                           <a href="./TheoryBlogPosts/Blog5.html">History of Web Robots</a> 
                         </li>
                         <li>
-                            Medium is the message
+                            <a href="./TheoryBlogPosts/Blog6.html">User Experience</a>
                         </li>
                         <li>
-                            History of Web Robots
+                           <a href="./TheoryBlogPosts/Blog7.html">Usability</a> 
                         </li>
                         <li>
-                            User Experience
+                            <a href="./TheoryBlogPosts/Blog8.html">Digital Divide</a>
                         </li>
                         <li>
-                            Usability
+                            <a href="./TheoryBlogPosts/BonusBlog.html">Bonus Blogs</a>
                         </li>
-                        <li>
-                            Digital Divide
-                        </li>
-                        <li>
-                            Bonus Blogs
-                        </li>
-                    </ul></a>
+                    </ul>
              </li>
                  <li> 
                      <a href="./CharacterBlogs/CharacterBlogPage.html">Character Blogs</a>
