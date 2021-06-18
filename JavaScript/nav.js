@@ -1,63 +1,67 @@
 
-
 const theoryBlogPosts = [
 { title: "Library of Babel", 
-date: new Date(), 
-summary: "Something...",
 link:"../TheoryBlogPosts/Blog1.html"},
 
 { title: "Technology and the development and Spread of Internet Culture",
-date: new Date(),
-summary: "Something...",
 link: "../TheoryBlogPosts/Blog2.html"},
 
-{ title: "What is a browser?", 
-date: new Date(), 
-summary: "Something...", 
+{ title: "What is a browser?",  
 link:"../TheoryBlogPosts/Blog3.html"},
 
-{ title:"Medium is the message", 
-date: new Date(), 
-summary: "Something...", 
+{ title:"Medium is the message",  
 link: "../TheoryBlogPosts/Blog4.html"},
 
 { title: "History of Web Robots", 
-date: new Date(), 
-summary: "Something...", 
 link:"../TheoryBlogPosts/Blog5.html"},
 
 { title:"User Experience", 
-date: new Date(), 
-summary: "Something...", 
 link: "../TheoryBlogPosts/Blog6.html"},
 
 { title:"Usability",
-date: new Date(), 
-summary: "Something...", 
 link: "../TheoryBlogPosts/Blog7.html"},
 
 { title:"A close reading of Graham et al’s", 
-date: new Date(), 
-summary: "Something...", 
 link:"../TheoryBlogPosts/Blog8.html"},
 
 { title: "Bonus Blogs", 
-date: new Date(), 
-summary: "Something...", 
 link: "../TheoryBlogPosts/BonusBlog.html"},
 ];
+
+const characterBlogs = [
+    { title:"Is the internet destroying creativity",  
+    
+    link: "../CharacterBlogs/CharacterBlog1.html"},
+    
+    { title:"City Blog",
+    link: "../CharacterBlogs/cityblog.html"},
+    
+    { title:"Poetry Diaries", 
+    link:"../CharacterBlogs/ImagesPages.html"},
+    
+    { title: "Photography Diaries", 
+    link: "../TheoryBlogPosts/photography.html"},
+    ];
+
+
 
 const menuItems = [
     {title: 'Home', link: '/'},
     {title: 'About', link: './About/AboutPage.html'},
     {title: 'Theory Blogs', link: './TheoryBlogPosts/BlogPage.html', children: theoryBlogPosts},
-    {title: 'Character Blogs', link: './CharacterBlogs/CharacterBlogPage.html'},
+    {title: 'Character Blogs', link: './CharacterBlogs/CharacterBlogPage.html', children: characterBlogs},
     {title: 'Contact Us', link: './ContactUs/ContactPage.html'},
 
 ];
 
+const headerElements = document.createElement("nav")
+headerElements.className = "nav-links"
+const navList = document.createElement("li")
+
 const createMenuItem = (item) => {
+    navigationBar= document.querySelector('.nav-links')
     const li = document.createElement('li'); //3.generate a list of new items
+    li.className = ""
     const a = document.createElement('a');
     a.innerText = item.title;
     a.href = item.link;
