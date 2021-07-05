@@ -1,11 +1,10 @@
 const navSlide = () => //1. creating a function where navSlide function is equal an anonymous function
 {
    const hamburger = document.querySelector('.svg'); //2. get the hamburger and the slider by declaring them
-   const nav = document.querySelector('.nav-links');
-   const navLinks = document.querySelectorAll('.nav-links li');//5. we going to get all the links into the animated menu section
+   const nav = document.querySelector('.navlinks');
+   const navLinks = document.querySelectorAll('.navlinks li');//5. we going to get all the links into the animated menu section
 
- 
-hamburger.addEventListener('click',  ()=>//3. what we want to happen is when the user clicks on the hamburger they navigation pops up so we going to do that by getting the class of nav-active
+   hamburger.addEventListener("click",()=>//3. what we want to happen is when the user clicks on the hamburger they navigation pops up so we going to do that by getting the class of nav-active
     {
        //Toogle navigation 
     nav.classList.toggle('nav-active');  
@@ -21,6 +20,6 @@ hamburger.addEventListener('click',  ()=>//3. what we want to happen is when the
             
         });
     });
-   
-}
-document.addEventListener('DOMContentLoaded', () => navSlide()); //4. then invoke the function
+  
+};
+window.addEventListener('DOMContentLoaded', (event) => navSlide()) //4. then invoke the function
