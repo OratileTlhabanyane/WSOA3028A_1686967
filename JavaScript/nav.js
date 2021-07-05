@@ -56,7 +56,12 @@ const characterBlogs = [
     
     { title: "Photography Diaries", 
     href: "../CharacterBlogs/photography.html"},
+
+    { title: "Joburg Photographers", 
+    href: "../CharacterBlogs/jhbphotographers.html"},
     ];
+    
+    
 
 
 
