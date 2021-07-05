@@ -28,7 +28,7 @@ ul{
     width: 25%;
     padding: 0 15px;
 }
-.footer-col h2{
+.footer-col strong{
   font-size: 18px;
   color: antiquewhite;
   text-transform: capitalize;
@@ -36,7 +36,7 @@ ul{
   font-weight: 500;
   position: relative;
 }
-.footer-col h2::before{
+.footer-col strong::before{
     content: '';
     position: absolute;
     left: 0;
